@@ -1,10 +1,59 @@
 
 
 
-
+/* Estilos generales para centrar el contenido */
 body{
     display: flex;
-    text-align: center;
     align-items: center;
     height: 100vh;
+    justify-content: center;
+    background-color: rgb(177,207,217);
+}
+
+/* Estilo para el lado izquierdo del login */
+.bg-left-login{
+    background-color: rgb(56,157,126);
+}
+
+/* Estilo para botones primarios */
+.btn-primary{
+    background-color: rgb(56,157,126);
+    border: rgb(56,157,126);
+}
+
+
+.bg-input{
+    background-color: rgb(240,241,240);
+}
+
+/* Estilo para títulos con color personalizado */
+.text-color-tittle{
+    color: rgb(80,69,68);
+}
+
+
+.w-60{
+    width: 60%;
+}
+
+/* Estilo para los inputs del formulario */
+.form-input-login{
+    border: none;
+    padding: 15px 20px;
+}
+
+.icon-large{
+    font-size: 1.5rem;
+}
+
+.text-gris{
+    color: rgb(182,181,180);
+}
+
+
+/*Aumento el tamaño del contenedor para pantallas pequeñas */
+@media (max-width: 575.98px) {
+    .w-60 {
+        width: 90%; /* Ancho del 90% en pantallas pequeñas */
+    }
 }

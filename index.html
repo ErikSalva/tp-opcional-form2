@@ -9,63 +9,74 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    
-    <div class="container border border-dark">
+    <!-- Contenedor principal con ancho del 60% -->
+    <div class="container w-60">
+
         <div class="row">
-            <div class="col-6 bg-warning ">
+    
+            <!-- Contenedor lado izquierdo  -->
+            <div class="col bg-left-login d-none d-lg-flex py-sm-5 align-items-center justify-content-center  rounded-start col-lg-5 col-xl-6">
+                <div class="container w-75 d-flex flex-column align align-items-center justify-content-center">
+                    <div class="w-75">
+                        <img src="img/bolsa-rupias-indias.png" alt="" class="img-fluid">
+                    </div>
+                    <h2 class="text-light">Xero Bank Loans</h2>
+                    <p class="text-light">We are the most trusted bank to give loans for home, cars and others to fulfill your dreams<p>
+
+                </div>
                 
             </div>
 
 
+            <!-- Contenedor lado derecho-->
+            <div class="col bg-white pt-sm-5 pb-sm-3 pt-2 pb-2 rounded-end">
 
-            <div class="col-6 p-5">
-                <h2>Just some more</h2>
-                <p>Carrefully read and fill up all the inputs with your original information</p>
+                <div class="container px-sm-5 pt-sm-4 px-3 pt-3">
 
-                <form action="">
-                    <div class="mb-3">
-                        <label for="" class="form-label">Amount</label>
-                        <input type="email" class="form-control" id="" placeholder="Amount">
-                    </div>
-                     <div class="mb-3">
-                        <label for="" class="form-label">Amount</label>
-                        <input type="email" class="form-control" id="" placeholder="Amount">
-                    </div>
-                    <select class="form-select">
-                        <option selected>Reason</option>
-                    </select>
+                    <h2 class="fw-bold text-color-tittle">Just some more</h2>
+                    <p class="text-gris mb-5 lh-1">Carrefully read and fill up all the inputs with your original information</p>
+                    <!-- Formulario -->
+                    <form action="">
+                        <div class="mb-3">
+                            <input type="email" class="form-control bg-input form-control-lg form-input-login" id="" placeholder="Amount">
+                        </div>
 
-                    <div class="mb-2">
+                        <select class="form-select bg-input mb-3 form-select-lg form-input-login">
+                            <option selected>Reason</option>
+                        </select>
+        
+                    </form>
+                    <!-- Opciones de radio -->
+                    <div class="mb-5 ms-2">
                         
                         <label for="" class="form-label">Have account in this bank</label>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio">
-                            <label class="form-check-label" for="">Yes</label>
+                            <input class="form-check-input bg-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label fw-bold text-color-tittle" for="">Yes</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio">
-                            <label class="form-check-label" for="">No</label>
+                            <input class="form-check-input bg-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+                            <label class="form-check-label fw-bold text-color-tittle" for="">No</label>
                         </div>
-                        <div class="row">
-                            <div class="col">
-                                <button class="btn btn-primary" type="submit">Back</button>
-                            </div>
-                            <div class="col">
-                                <button class="btn btn-primary" type="submit">Next</button>
-                            </div>
-                        </div>
+                        
+                    </div>
+                    <!-- Botones de navegación -->
+                    <div class="container row d-flex justify-content-end ms-sm-4 ms-1 ">
+                        <button class="btn fw-bold col-sm-5  col-12 btn-primary btn-lg d-flex justify-content-center align-items-center mb-sm-0 mb-3" type="button"><i class="bi bi-arrow-left-short icon-large btn-responsive"></i>Back</button>
+                        <button class="btn fw-bold col-sm-5 col-12 btn-primary btn-lg d-flex justify-content-center align-items-center ms-sm-3 mb-sm-0 mb-3" type="button">Next <i class="bi bi-arrow-right-short icon-large btn-responsive"></i></button>
                     </div>
 
-                    
-                </form>
+                </div>
+                
+               
+
             </div>
         </div>
         
     </div>
 
-
-
-
+    <!-- Script de Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
 </body>
 </html>
